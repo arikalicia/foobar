@@ -1,0 +1,437 @@
+﻿Illegal operation:
+Code: C0000005h, flags: 00000000h, address: 775486D6h
+Access violation, operation: read, address: 00000000h
+
+Call path:
+converter_process::threadfunc
+
+Code bytes (775486D6h):
+77548696h:  00 00 00 E8 5A B5 FB FF 8B 4D F4 8B C3 5F 5E 5B
+775486A6h:  64 89 0D 00 00 00 00 8B E5 5D C2 0C 00 8D 4D C8
+775486B6h:  E8 CF B4 FB FF 68 9C 2D 57 77 8D 45 C8 50 E8 A5
+775486C6h:  1F 01 00 CC CC CC CC CC CC CC 53 56 8B F1 2B F2
+775486D6h:  8A 1C 16 8A 02 84 DB 7E 1A 84 C0 7E 14 0F BE C8
+775486E6h:  0F BE C3 8A 80 28 18 56 77 3A 81 28 18 56 77 EB
+775486F6h:  0A 84 DB 74 0B 84 C0 74 10 3A D8 75 0C 42 EB D0
+77548706h:  84 C0 75 05 5E B0 01 5B C3 5E 32 C0 5B C3 CC CC
+
+Stack (094FEF60h):
+094FEF40h:  706222AA 00000000 0524CE1F 00000000
+094FEF50h:  00000000 094FEF98 0D22107C 094FEFA4
+094FEF60h:  0524CE1F 70622240 775429EA 0D22107C
+094FEF70h:  051617A0 00000000 00000000 05195618
+094FEF80h:  05195618 094FF744 7755ACE6 FFFFFFFF
+094FEF90h:  094FEFA0 775429A4 094FF744 7755DA59
+094FEFA0h:  FFFFFFFF 094FF750 7751BDD3 0BE55488
+094FEFB0h:  00000000 0BE0E798 00000020 00000020
+094FEFC0h:  00B4324C 00000000 00000000 77276A90
+094FEFD0h:  094FF158 01000000 00000000 094FF124
+094FEFE0h:  771A7438 00000020 094FF288 094FF14C
+094FEFF0h:  094FF288 00000000 771A745E 094FF144
+094FF000h:  771A7438 00000020 094FF2A8 094FF14C
+094FF010h:  094FF2A8 00000000 771A745E 094FF164
+094FF020h:  771A7438 00000020 094FF2C8 094FF16C
+094FF030h:  094FF2C8 00000000 771A745E 094FF17C
+094FF040h:  00000000 00000000 00000000 094FF18C
+094FF050h:  01000000 094FF058 00540000 004C0044
+094FF060h:  0000004C 00000000 00000000 00000000
+094FF070h:  00000000 00000000 01000000 094FF080
+
+Registers:
+EAX: 00000000, EBX: 70622240, ECX: 00000000, EDX: 77567440
+ESI: 88A98BC0, EDI: 00000000, EBP: 094FEFA4, ESP: 094FEF60
+
+Crash location:
+Module: foo_converter
+Offset: 486D6h
+
+Loaded modules:
+foobar2000                       loaded at 00300000h - 00509000h
+ntdll                            loaded at 77160000h - 772ED000h
+KERNEL32                         loaded at 76A70000h - 76B40000h
+KERNELBASE                       loaded at 73C60000h - 73E22000h
+SHLWAPI                          loaded at 73F20000h - 73F65000h
+msvcrt                           loaded at 73E60000h - 73F1D000h
+COMCTL32                         loaded at 739F0000h - 73BFE000h
+combase                          loaded at 76830000h - 76A68000h
+WINMM                            loaded at 73990000h - 739B4000h
+DSOUND                           loaded at 54120000h - 5419E000h
+ucrtbase                         loaded at 76E70000h - 76F88000h
+GDI32                            loaded at 76DE0000h - 76E01000h
+advapi32                         loaded at 74280000h - 742F7000h
+RPCRT4                           loaded at 76B50000h - 76C10000h
+gdi32full                        loaded at 74B60000h - 74CB8000h
+sechost                          loaded at 74300000h - 74341000h
+SspiCli                          loaded at 73C30000h - 73C50000h
+msvcp_win                        loaded at 74350000h - 743C9000h
+WINMMBASE                        loaded at 73930000h - 73953000h
+CRYPTBASE                        loaded at 73C20000h - 73C2A000h
+powrprof                         loaded at 74A20000h - 74A65000h
+cfgmgr32                         loaded at 77120000h - 77159000h
+bcryptPrimitives                 loaded at 76E10000h - 76E67000h
+USER32                           loaded at 73F70000h - 740AC000h
+SHELL32                          loaded at 753D0000h - 76719000h
+win32u                           loaded at 76790000h - 767A6000h
+shcore                           loaded at 743D0000h - 7445C000h
+windows.storage                  loaded at 74E40000h - 753C7000h
+UxTheme                          loaded at 6FD60000h - 6FDD8000h
+kernel.appcore                   loaded at 73E50000h - 73E5E000h
+profapi                          loaded at 76720000h - 76730000h
+ole32                            loaded at 74920000h - 74A13000h
+OLEAUT32                         loaded at 74880000h - 74916000h
+CRYPT32                          loaded at 74CC0000h - 74E3D000h
+MSASN1                           loaded at 77110000h - 7711E000h
+MSIMG32                          loaded at 73C10000h - 73C16000h
+OLEACC                           loaded at 6FC30000h - 6FC86000h
+gdiplus                          loaded at 73340000h - 734A6000h
+WINHTTP                          loaded at 66580000h - 6662D000h
+Secur32                          loaded at 66BA0000h - 66BAA000h
+zlib1                            loaded at 63080000h - 63099000h
+VCRUNTIME140                     loaded at 70640000h - 70655000h
+shared                           loaded at 70610000h - 70631000h
+MSVCP140                         loaded at 70590000h - 70601000h
+imagehlp                         loaded at 73E30000h - 73E49000h
+COMDLG32                         loaded at 76C10000h - 76CFF000h
+dbghelp                          loaded at 73760000h - 738BD000h
+dbgcore                          loaded at 73730000h - 73755000h
+IMM32                            loaded at 770E0000h - 77105000h
+MSCTF                            loaded at 76F90000h - 770D6000h
+dwmapi                           loaded at 6F960000h - 6F983000h
+foo_cuesheet_creator             loaded at 10000000h - 1002C000h
+foo_run                          loaded at 02CD0000h - 02D0A000h
+foo_albumlist                    loaded at 70540000h - 70586000h
+foo_freedb2                      loaded at 70510000h - 70540000h
+foo_comserver2                   loaded at 02E60000h - 02EB6000h
+foo_upnp                         loaded at 70300000h - 70507000h
+WS2_32                           loaded at 767C0000h - 76827000h
+IPHLPAPI                         loaded at 71560000h - 7158F000h
+foo_input_std                    loaded at 701A0000h - 702FC000h
+MSACM32                          loaded at 6F9A0000h - 6F9B8000h
+avutil-fb2k-55                   loaded at 70100000h - 7019E000h
+avcodec-fb2k-57                  loaded at 779A0000h - 77C0B000h
+foo_cdda                         loaded at 700C0000h - 700FA000h
+foo_uie_elplaylist               loaded at 6FA70000h - 6FAE3000h
+foo_dsp_eq                       loaded at 50000000h - 5001D000h
+foo_input_tak                    loaded at 77950000h - 77991000h
+tak_deco_lib                     loaded at 02F60000h - 02F81000h
+foo_ui_columns                   loaded at 77770000h - 7794C000h
+urlmon                           loaded at 6EAF0000h - 6EC8C000h
+USP10                            loaded at 6D6F0000h - 6D707000h
+iertutil                         loaded at 6E8D0000h - 6EAE3000h
+foo_unpack                       loaded at 77730000h - 77764000h
+foo_dsp_std                      loaded at 77700000h - 77729000h
+foo_uie_albumlist                loaded at 03010000h - 03059000h
+foo_uie_panel_splitter           loaded at 03060000h - 030B9000h
+foo_uie_biography                loaded at 776A0000h - 776F8000h
+foo_ui_std                       loaded at 77590000h - 77695000h
+foo_converter                    loaded at 77500000h - 77588000h
+foo_rgscan                       loaded at 774B0000h - 774FB000h
+foo_fileops                      loaded at 77470000h - 774B0000h
+clbcatq                          loaded at 74AD0000h - 74B53000h
+MMDevApi                         loaded at 6F5C0000h - 6F619000h
+DEVOBJ                           loaded at 709B0000h - 709D2000h
+PROPSYS                          loaded at 73500000h - 73664000h
+AUDIOSES                         loaded at 6D0C0000h - 6D197000h
+wintypes                         loaded at 6CFE0000h - 6D0B1000h
+AVRT                             loaded at 6CFD0000h - 6CFD9000h
+Windows.UI                       loaded at 5C8C0000h - 5C985000h
+TextInputFramework               loaded at 65700000h - 65767000h
+CoreUIComponents                 loaded at 65440000h - 65667000h
+CoreMessaging                    loaded at 65670000h - 656FF000h
+ntmarta                          loaded at 73700000h - 73728000h
+usermgrcli                       loaded at 65430000h - 65440000h
+WindowsCodecs                    loaded at 64D80000h - 64EF1000h
+dataexchange                     loaded at 6A5C0000h - 6A603000h
+d3d11                            loaded at 6BFA0000h - 6C1F1000h
+dcomp                            loaded at 6BEB0000h - 6BF9B000h
+dxgi                             loaded at 6D3A0000h - 6D42A000h
+twinapi.appcore                  loaded at 6A480000h - 6A5B6000h
+bcrypt                           loaded at 734D0000h - 734E8000h
+DWrite                           loaded at 6D4A0000h - 6D6E7000h
+mswsock                          loaded at 72A20000h - 72A6E000h
+NSI                              loaded at 73C50000h - 73C57000h
+dhcpcsvc                         loaded at 70A30000h - 70A44000h
+PP-UWP-Interop                   loaded at 700B0000h - 700B8000h
+Windows.Media.MediaControl       loaded at 61EE0000h - 61F2A000h
+MFPlat                           loaded at 6CD60000h - 6CEC6000h
+RTWorkQ                          loaded at 6CD30000h - 6CD5A000h
+MFMediaEngine                    loaded at 52910000h - 52CF4000h
+XmlLite                          loaded at 708A0000h - 708CF000h
+Windows.Media.Playback.ProxyStu  loaded at 773A0000h - 773B1000h
+OneCoreUAPCommonProxyStub        loaded at 59E90000h - 5A108000h
+explorerframe                    loaded at 578E0000h - 57D1A000h
+skkfep                           loaded at 65410000h - 65426000h
+D2D1                             loaded at 64F10000h - 65410000h
+IconCodecService                 loaded at 64F00000h - 64F08000h
+atlthunk                         loaded at 6F940000h - 6F94C000h
+edputil                          loaded at 77360000h - 7739C000h
+dhcpcsvc6                        loaded at 70980000h - 70993000h
+DNSAPI                           loaded at 71590000h - 7160F000h
+mdnsNSP                          loaded at 6D1A0000h - 6D1C1000h
+rasadhlp                         loaded at 71550000h - 71558000h
+fwpuclnt                         loaded at 71500000h - 7154A000h
+tiptsf                           loaded at 0F6F0000h - 0F771000h
+MPR                              loaded at 6FC90000h - 6FCA6000h
+drprov                           loaded at 773D0000h - 773D9000h
+WINSTA                           loaded at 70680000h - 706C2000h
+ntlanman                         loaded at 77340000h - 77352000h
+davclnt                          loaded at 77320000h - 7733A000h
+DAVHLPR                          loaded at 773C0000h - 773CA000h
+wkscli                           loaded at 70660000h - 70670000h
+cscapi                           loaded at 6FD50000h - 6FD5F000h
+netutils                         loaded at 734F0000h - 734FB000h
+DUI70                            loaded at 0F4B0000h - 0F61D000h
+DUser                            loaded at 0F8B0000h - 0F92A000h
+thumbcache                       loaded at 61E90000h - 61ED7000h
+policymanager                    loaded at 53BE0000h - 53C44000h
+msvcp110_win                     loaded at 61E00000h - 61E66000h
+Windows.Globalization            loaded at 0F060000h - 0F192000h
+Bcp47Langs                       loaded at 5A160000h - 5A1B0000h
+globinputhost                    loaded at 772F0000h - 77315000h
+uiautomationcore                 loaded at 6D230000h - 6D399000h
+sxs                              loaded at 706D0000h - 70756000h
+StructuredQuery                  loaded at 092A0000h - 09329000h
+apphelp                          loaded at 6FCB0000h - 6FD43000h
+dlnashext                        loaded at 0F640000h - 0F680000h
+DevDispItemProvider              loaded at 0F6C0000h - 0F6DA000h
+twinapi                          loaded at 0F300000h - 0F36E000h
+samcli                           loaded at 0FAB0000h - 0FAC5000h
+SAMLIB                           loaded at 4CC80000h - 4CC99000h
+NetworkExplorer                  loaded at 0E310000h - 0E434000h
+FileSyncShell                    loaded at 0EBF0000h - 0ED24000h
+VERSION                          loaded at 73C00000h - 73C08000h
+WININET                          loaded at 6FDE0000h - 700A1000h
+ktmw32                           loaded at 0FB90000h - 0FB99000h
+mssprxy                          loaded at 5F770000h - 5F782000h
+ntshrui                          loaded at 53DF0000h - 53EB7000h
+srvcli                           loaded at 60F30000h - 60F4C000h
+CHARTV                           loaded at 0FE10000h - 0FE2D000h
+WTSAPI32                         loaded at 739E0000h - 739EF000h
+coml2                            loaded at 740B0000h - 7410E000h
+LINKINFO                         loaded at 6F950000h - 6F95D000h
+Windows.Storage.Search           loaded at 5A440000h - 5A4ED000h
+IDStore                          loaded at 61E70000h - 61E90000h
+wlidprov                         loaded at 5A3B0000h - 5A437000h
+provsvc                          loaded at 60E30000h - 60E95000h
+OneCoreCommonProxyStub           loaded at 5A370000h - 5A3A2000h
+PlayToDevice                     loaded at 5A310000h - 5A366000h
+PortableDeviceApi                loaded at 5A280000h - 5A303000h
+SETUPAPI                         loaded at 74460000h - 7487A000h
+WINTRUST                         loaded at 76D00000h - 76D45000h
+MrmCoreR                         loaded at 61F30000h - 62004000h
+Windows.StateRepository          loaded at 59A40000h - 59E3E000h
+StateRepository.Core             loaded at 599B0000h - 59A37000h
+mfsrcsnk                         loaded at 506D0000h - 50832000h
+
+Stack dump analysis:
+Address: 70622240h (shared+12240h), symbol: "uDeleteFile" (+0h)
+Address: 775429EAh (foo_converter+429EAh)
+Address: 7755ACE6h (foo_converter+5ACE6h), symbol: "foobar2000_get_interface" (+EF06h)
+Address: 775429A4h (foo_converter+429A4h)
+Address: 7755DA59h (foo_converter+5DA59h), symbol: "foobar2000_get_interface" (+11C79h)
+Address: 7751BDD3h (foo_converter+1BDD3h)
+Address: 77276A90h (ntdll+116A90h), symbol: "NlsMbCodePageTag" (+D57h)
+Address: 771A7438h (ntdll+47438h), symbol: "RtlEqualUnicodeString" (+158h)
+Address: 771A745Eh (ntdll+4745Eh), symbol: "RtlEqualUnicodeString" (+17Eh)
+Address: 771A7438h (ntdll+47438h), symbol: "RtlEqualUnicodeString" (+158h)
+Address: 771A745Eh (ntdll+4745Eh), symbol: "RtlEqualUnicodeString" (+17Eh)
+Address: 771A7438h (ntdll+47438h), symbol: "RtlEqualUnicodeString" (+158h)
+Address: 771A745Eh (ntdll+4745Eh), symbol: "RtlEqualUnicodeString" (+17Eh)
+Address: 004C0044h (foobar2000+1C0044h)
+Address: 004C0044h (foobar2000+1C0044h)
+Address: 771A6971h (ntdll+46971h), symbol: "RtlDeactivateActivationContextUnsafeFast" (+4E1h)
+Address: 771611ACh (ntdll+11ACh)
+Address: 77568594h (foo_converter+68594h), symbol: "foobar2000_get_interface" (+1C7B4h)
+Address: 771DA8D0h (ntdll+7A8D0h), symbol: "wcstombs" (+90h)
+Address: 77160000h (ntdll+0h)
+Address: 771DA8D0h (ntdll+7A8D0h), symbol: "wcstombs" (+90h)
+Address: 771A4E4Dh (ntdll+44E4Dh), symbol: "LdrGetDllHandleEx" (+36Dh)
+Address: 771A4E5Ch (ntdll+44E5Ch), symbol: "LdrGetDllHandleEx" (+37Ch)
+Address: 77160000h (ntdll+0h)
+Address: 00450000h (foobar2000+150000h)
+Address: 004E0052h (foobar2000+1E0052h)
+Address: 004C0045h (foobar2000+1C0045h)
+Address: 00320033h (foobar2000+20033h)
+Address: 0044002Eh (foobar2000+14002Eh)
+Address: 004C004Ch (foobar2000+1C004Ch)
+Address: 77160000h (ntdll+0h)
+Address: 771E5B8Ch (ntdll+85B8Ch), symbol: "wcstok_s" (+57CCh)
+Address: 771E5B8Ch (ntdll+85B8Ch), symbol: "wcstok_s" (+57CCh)
+Address: 776DAE10h (foo_uie_biography+3AE10h), symbol: "foobar2000_get_interface" (+18260h)
+Address: 771E5BACh (ntdll+85BACh), symbol: "wcstok_s" (+57ECh)
+Address: 76AF62B2h (KERNEL32+862B2h), symbol: "DecodePointer" (+6h)
+Address: 76AF62ACh (KERNEL32+862ACh), symbol: "DecodePointer" (+0h)
+Address: 6D1B85B4h (mdnsNSP+185B4h), symbol: "NSPStartup" (+158E4h)
+Address: 771A7552h (ntdll+47552h), symbol: "RtlEqualUnicodeString" (+272h)
+Address: 771A4BCAh (ntdll+44BCAh), symbol: "LdrGetDllHandleEx" (+EAh)
+Address: 771A4B74h (ntdll+44B74h), symbol: "LdrGetDllHandleEx" (+94h)
+Address: 77199CD5h (ntdll+39CD5h), symbol: "RtlAllocateHeap" (+535h)
+Address: 0EC58778h (FileSyncShell+68778h), symbol: "QoS::IsAnyLibraryIrmEnabled" (+44358h)
+Address: 0EC377E6h (FileSyncShell+477E6h), symbol: "QoS::IsAnyLibraryIrmEnabled" (+233C6h)
+Address: 0EC791B0h (FileSyncShell+891B0h), symbol: "QoS::IsAnyLibraryIrmEnabled" (+64D90h)
+Address: 0EC399D5h (FileSyncShell+499D5h), symbol: "QoS::IsAnyLibraryIrmEnabled" (+255B5h)
+Address: 0EC399C8h (FileSyncShell+499C8h), symbol: "QoS::IsAnyLibraryIrmEnabled" (+255A8h)
+Address: 0EC2E5C0h (FileSyncShell+3E5C0h), symbol: "QoS::IsAnyLibraryIrmEnabled" (+1A1A0h)
+Address: 0EC399C8h (FileSyncShell+499C8h), symbol: "QoS::IsAnyLibraryIrmEnabled" (+255A8h)
+Address: 0EC39A6Eh (FileSyncShell+49A6Eh), symbol: "QoS::IsAnyLibraryIrmEnabled" (+2564Eh)
+Address: 771B9089h (ntdll+59089h), symbol: "RtlRestoreLastWin32Error" (+39h)
+Address: 599F0FACh (StateRepository.Core+40FACh), symbol: "sqlite3_release_memory" (+44Ch)
+Address: 73C01F53h (VERSION+1F53h), symbol: "GetFileVersionInfoW" (+9C3h)
+Address: 599F10FDh (StateRepository.Core+410FDh), symbol: "sqlite3_release_memory" (+59Dh)
+Address: 599B0000h (StateRepository.Core+0h)
+Address: 599F1736h (StateRepository.Core+41736h), symbol: "sqlite3_release_memory" (+BD6h)
+Address: 599F127Fh (StateRepository.Core+4127Fh), symbol: "sqlite3_release_memory" (+71Fh)
+Address: 599B0000h (StateRepository.Core+0h)
+Address: 740B0000h (coml2+0h)
+Address: 77560A14h (foo_converter+60A14h), symbol: "foobar2000_get_interface" (+14C34h)
+Address: 740D9422h (coml2+29422h), symbol: "WriteClassStm" (+562h)
+Address: 77276C0Ch (ntdll+116C0Ch), symbol: "NlsMbCodePageTag" (+ED3h)
+Address: 77276C0Ch (ntdll+116C0Ch), symbol: "NlsMbCodePageTag" (+ED3h)
+Address: 771A6530h (ntdll+46530h), symbol: "RtlDeactivateActivationContextUnsafeFast" (+A0h)
+Address: 771A8673h (ntdll+48673h), symbol: "RtlActivateActivationContextUnsafeFast" (+73h)
+Address: 771A680Fh (ntdll+4680Fh), symbol: "RtlDeactivateActivationContextUnsafeFast" (+37Fh)
+Address: 599F0FC0h (StateRepository.Core+40FC0h), symbol: "sqlite3_release_memory" (+460h)
+Address: 599B0000h (StateRepository.Core+0h)
+Address: 771A73D8h (ntdll+473D8h), symbol: "RtlEqualUnicodeString" (+F8h)
+Address: 77276C0Ch (ntdll+116C0Ch), symbol: "NlsMbCodePageTag" (+ED3h)
+Address: 77276C0Ch (ntdll+116C0Ch), symbol: "NlsMbCodePageTag" (+ED3h)
+Address: 77276B60h (ntdll+116B60h), symbol: "NlsMbCodePageTag" (+E27h)
+Address: 77276C0Ch (ntdll+116C0Ch), symbol: "NlsMbCodePageTag" (+ED3h)
+Address: 771D26DCh (ntdll+726DCh), symbol: "NtSetEvent" (+Ch)
+Address: 771C57A9h (ntdll+657A9h), symbol: "LdrDisableThreadCalloutsForDll" (+3A9h)
+Address: 77276C0Ch (ntdll+116C0Ch), symbol: "NlsMbCodePageTag" (+ED3h)
+Address: 771A5556h (ntdll+45556h), symbol: "LdrShutdownThread" (+686h)
+Address: 771A5476h (ntdll+45476h), symbol: "LdrShutdownThread" (+5A6h)
+Address: 771A548Eh (ntdll+4548Eh), symbol: "LdrShutdownThread" (+5BEh)
+Address: 771A54F9h (ntdll+454F9h), symbol: "LdrShutdownThread" (+629h)
+Address: 771A5562h (ntdll+45562h), symbol: "LdrShutdownThread" (+692h)
+Address: 599F0FC0h (StateRepository.Core+40FC0h), symbol: "sqlite3_release_memory" (+460h)
+Address: 775609E4h (foo_converter+609E4h), symbol: "foobar2000_get_interface" (+14C04h)
+Address: 771DA8D0h (ntdll+7A8D0h), symbol: "wcstombs" (+90h)
+Address: 771D413Ch (ntdll+7413Ch), symbol: "ZwTestAlert" (+Ch)
+Address: 771CB97Dh (ntdll+6B97Dh), symbol: "LdrInitializeThunk" (+FDh)
+Address: 77160000h (ntdll+0h)
+Address: 77560A14h (foo_converter+60A14h), symbol: "foobar2000_get_interface" (+14C34h)
+Address: 771DA8D0h (ntdll+7A8D0h), symbol: "wcstombs" (+90h)
+Address: 771D2A4Ch (ntdll+72A4Ch), symbol: "ZwContinue" (+Ch)
+Address: 771CB8B4h (ntdll+6B8B4h), symbol: "LdrInitializeThunk" (+34h)
+Address: 77562BF4h (foo_converter+62BF4h), symbol: "foobar2000_get_interface" (+16E14h)
+Address: 77560A14h (foo_converter+60A14h), symbol: "foobar2000_get_interface" (+14C34h)
+Address: 76EAEAE0h (ucrtbase+3EAE0h), symbol: "set_app_type" (+10h)
+Address: 771D4B10h (ntdll+74B10h), symbol: "RtlUserThreadStart" (+0h)
+Address: 76AC3CC0h (KERNEL32+53CC0h), symbol: "PowerCreateRequest" (+0h)
+Address: 76AC3DB0h (KERNEL32+53DB0h), symbol: "PowerSetRequest" (+0h)
+Address: 76AC3D30h (KERNEL32+53D30h), symbol: "PowerClearRequest" (+0h)
+Address: 7755BBDDh (foo_converter+5BBDDh), symbol: "foobar2000_get_interface" (+FDFDh)
+Address: 76EC6600h (ucrtbase+56600h), symbol: "crt_debugger_hook" (+10h)
+Address: 76E9F75Bh (ucrtbase+2F75Bh), symbol: "free_base" (+1Bh)
+Address: 70617CA3h (shared+7CA3h), symbol: "uCallStackTracker::uCallStackTracker" (+D3h)
+Address: 77560B26h (foo_converter+60B26h), symbol: "foobar2000_get_interface" (+14D46h)
+Address: 775184CBh (foo_converter+184CBh)
+Address: 77518479h (foo_converter+18479h)
+Address: 7755B7FAh (foo_converter+5B7FAh), symbol: "foobar2000_get_interface" (+FA1Ah)
+Address: 76EAEB1Fh (ucrtbase+3EB1Fh), symbol: "set_app_type" (+4Fh)
+Address: 6A4A85AEh (twinapi.appcore+285AEh), symbol: "Ordinal471" (+285AEh)
+Address: 76EAEAE0h (ucrtbase+3EAE0h), symbol: "set_app_type" (+10h)
+Address: 76EAEAE0h (ucrtbase+3EAE0h), symbol: "set_app_type" (+10h)
+Address: 6A4A85AEh (twinapi.appcore+285AEh), symbol: "Ordinal471" (+285AEh)
+Address: 76EC6600h (ucrtbase+56600h), symbol: "crt_debugger_hook" (+10h)
+Address: 76A88744h (KERNEL32+18744h), symbol: "BaseThreadInitThunk" (+24h)
+Address: 76A88720h (KERNEL32+18720h), symbol: "BaseThreadInitThunk" (+0h)
+Address: 771C58EDh (ntdll+658EDh), symbol: "RtlGetAppContainerNamedObjectPath" (+FDh)
+Address: 73DD9F40h (KERNELBASE+179F40h), symbol: "UnhandledExceptionFilter" (+0h)
+Address: 771DA8D0h (ntdll+7A8D0h), symbol: "wcstombs" (+90h)
+Address: 771C58BDh (ntdll+658BDh), symbol: "RtlGetAppContainerNamedObjectPath" (+CDh)
+Address: 771E6CC9h (ntdll+86CC9h), symbol: "RtlCaptureContext" (+E9h)
+Address: 76EAEAE0h (ucrtbase+3EAE0h), symbol: "set_app_type" (+10h)
+
+Environment:
+App: foobar2000 v1.4
+UI: Columns UI 1.0.0-alpha.2
+
+Components:
+Core (2018-07-24 10:54:48 UTC)
+    foobar2000 core 1.4
+foo_albumlist.dll (2018-07-24 10:54:02 UTC)
+    Album List 4.6
+foo_cdda.dll (2018-07-24 10:54:04 UTC)
+    CD Audio Decoder 3.0
+foo_comserver2.dll (2006-07-31 19:13:20 UTC)
+    COM Automation server 0.7 alpha 6
+foo_converter.dll (2018-07-24 10:54:04 UTC)
+    Converter 1.5.3
+foo_cuesheet_creator.dll (2007-03-10 02:58:28 UTC)
+    Cuesheet Creator 0.4.6
+foo_dsp_eq.dll (2018-07-24 10:53:56 UTC)
+    Equalizer 1.2.1
+foo_dsp_std.dll (2018-07-24 10:53:58 UTC)
+    Standard DSP Array 1.3.1
+foo_fileops.dll (2018-07-24 10:54:00 UTC)
+    File Operations 2.3
+foo_freedb2.dll (2018-07-24 10:54:14 UTC)
+    Online Tagger 0.7
+foo_input_std.dll (2018-07-24 10:54:34 UTC)
+    FFmpeg Decoders 3.2.4
+    Standard Input Array 1.0
+foo_input_tak.dll (2018-09-17 16:54:44 UTC)
+    TAK Decoder 0.4.8
+foo_rgscan.dll (2018-07-24 10:54:10 UTC)
+    ReplayGain Scanner 2.3
+foo_run.dll (2018-09-16 07:08:35 UTC)
+    Run services 0.3.8
+foo_ui_columns.dll (2018-09-13 01:58:47 UTC)
+    Columns UI 1.0.0-alpha.2
+foo_ui_std.dll (2018-07-24 10:54:14 UTC)
+    Default User Interface 0.9.5
+foo_uie_albumlist.dll (2018-11-18 15:18:44 UTC)
+    Album list panel 0.3.7
+foo_uie_biography.dll (2010-12-10 23:47:22 UTC)
+    Biography View 0.4.2.4
+foo_uie_elplaylist.dll (2010-10-30 12:51:16 UTC)
+    ELPlaylist 0.6.9.1.2(beta)
+foo_uie_panel_splitter.dll (2009-12-09 15:16:12 UTC)
+    Panel Stack Splitter 0.3.8.3(alpha)
+foo_unpack.dll (2018-07-24 10:54:08 UTC)
+    ZIP/GZIP/RAR Reader 1.8
+foo_upnp.dll (2018-09-13 01:53:14 UTC)
+    UPnP/DLNA Renderer, Server, Control Point 0.99.49
+
+Recent events:
+Track converted successfully.
+Encoder process still running, waiting...
+Encoder process terminated cleanly.
+Track converted successfully.
+Encoder process still running, waiting...
+Encoder process terminated cleanly.
+Track converted successfully.
+Encoder process still running, waiting...
+Encoder process terminated cleanly.
+Track converted successfully.
+Encoder process still running, waiting...
+Encoder process terminated cleanly.
+Track converted successfully.
+Encoder process still running, waiting...
+Encoder process terminated cleanly.
+Track converted successfully.
+Encoder process still running, waiting...
+Encoder process terminated cleanly.
+Track converted successfully.
+Encoder process still running, waiting...
+Encoder process terminated cleanly.
+Track converted successfully.
+Total encoding time: 0:11.016, 1520.19x realtime
+Converting: "S:\Musics\Anime CD\anime\anime\魔女の旅々  8\魔女の旅々  8.cue" / index: 1
+Unable to open source file: Object not found
+Conversion failed: Object not found
+Converting: "S:\Musics\Anime CD\anime\anime\魔女の旅々  8\魔女の旅々  8.cue" / index: 2
+Unable to open source file: Object not found
+Conversion failed: Object not found
+could not enumerate tracks (Object not found) on:
+S:\Contents\Musics\DP-X1A\Anime CD\anime\anime\魔女の旅々  8\魔女達の休日.flac
+
+
+Machine specifications:
+OS: Windows 10.0.15063 x64
+CPU: Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz, features: MMX SSE SSE2 SSE3 SSE4.1 SSE4.2
+CPU threads: 8
+Audio: スピーカー (USB Audio CODEC ); Realtek Digital Output (Realtek High Definition Audio)

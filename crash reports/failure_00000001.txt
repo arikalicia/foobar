@@ -1,0 +1,258 @@
+﻿Illegal operation:
+Code: 6F8E1DC8h, flags: 00000001h, address: 7B43E173h
+Additional parameters: 00000002h
+
+Call path not available.
+
+Code bytes (7B43E173h):
+7B43E133h:  4D A8 89 45 A4 C1 E0 02 8B 5C 02 FC 89 5C 05 A4
+7B43E143h:  83 E8 01 83 F8 04 72 1C 83 E0 FC 31 DB 8B 34 1A
+7B43E153h:  89 34 19 83 C3 04 39 C3 72 F3 EB 08 90 C7 45 A4
+7B43E163h:  00 00 00 00 83 EC 0C 8D 45 94 50 E8 09 C4 FE FF
+7B43E173h:  83 C4 0C 8B 45 E4 65 33 05 14 00 00 00 75 0E 8D
+7B43E183h:  65 F0 59 5B 5E 5F 5D 8D 61 FC C2 10 00 E8 8B EE
+7B43E193h:  04 00 8D B4 26 00 00 00 00 8D 74 26 00 55 89 E5
+7B43E1A3h:  57 89 C7 56 E8 A3 9E FF FF 81 C6 54 0E 20 00 53
+
+Stack (03C9FCF4h):
+03C9FCD4h:  00000007 000FD000 F7CEC5F9 7BCE7000
+03C9FCE4h:  7BCA4DC4 03C9FD78 7B43E173 03C9FD0C
+03C9FCF4h:  3F5B8D00 00000000 00000000 7BC85D2B
+03C9FD04h:  7BCE7000 03C9FD24 6F8E1DC8 00000001
+03C9FD14h:  00000000 7B43E173 00000001 00000002
+03C9FD24h:  00010007 00000000 00000000 00000000
+03C9FD34h:  00000000 03C9FDC8 7B43E173 03C9FD5C
+03C9FD44h:  00000000 00000000 00000000 00000000
+03C9FD54h:  7BCE7000 03C9FD88 3F5B8D00 022EAB60
+03C9FD64h:  00000000 03C9FD88 022EAAFC 0225A3F0
+03C9FD74h:  00000002 03C9FD98 0225A40C 00000000
+03C9FD84h:  0225A40C 6F8E1DC8 00000001 00000001
+03C9FD94h:  03C9FDA0 03C9FDD8 0229133F 00000002
+03C9FDA4h:  0EED16A4 00000000 00156DD0 7B63F000
+03C9FDB4h:  00000002 0225A3F0 0EED16A4 03C9FDA4
+03C9FDC4h:  03C9F91C 03C9FF1C 0228E3F0 0F0AE1DC
+03C9FDD4h:  FFFFFFFE 03C9FED8 7B430672 00000000
+03C9FDE4h:  00000000 00000000 00000000 0000027F
+03C9FDF4h:  00000000 7B63F000 00000000 00000000
+03C9FE04h:  00000000 03C9FF1C 7B48AB10 7B430730
+
+Registers:
+EAX: 7B42A581, EBX: 00000002, ECX: 03C9FD20, EDX: 03C9FDA0
+ESI: 7B63F000, EDI: 6F8E1DC8, EBP: 03C9FD78, ESP: 03C9FCF4
+
+Crash location:
+Module: kernel32
+Offset: 1E173h
+
+Loaded modules:
+propsys                          loaded at F7840000h - F7866000h
+windowscodecs                    loaded at F6E50000h - F6F00000h
+kernelbase                       loaded at F7870000h - F7891000h
+api-ms-win-appmodel-runtime-l1-  loaded at F7B10000h - F7B23000h
+mmdevapi                         loaded at F78A0000h - F78B5000h
+foo_rgscan                       loaded at 02470000h - 024BB000h
+foo_ui_std                       loaded at 02360000h - 02465000h
+mpr                              loaded at F78C0000h - F78DF000h
+wininet                          loaded at F78F0000h - F795E000h
+urlmon                           loaded at F7970000h - F7A00000h
+foo_ui_columns                   loaded at 02180000h - 0235C000h
+foo_cdda                         loaded at 02140000h - 0217A000h
+foo_converter                    loaded at 020B0000h - 02138000h
+foo_uie_biography                loaded at 01F40000h - 01F98000h
+foo_freedb2                      loaded at 01F10000h - 01F40000h
+foo_comserver2                   loaded at 01DA0000h - 01DF6000h
+foo_cuesheet_creator             loaded at 01C60000h - 01C8C000h
+foo_run                          loaded at 01C20000h - 01C5A000h
+foo_uie_panel_splitter           loaded at 01AB0000h - 01B09000h
+foo_dsp_eq                       loaded at 01A90000h - 01AAD000h
+foo_dsp_std                      loaded at 01A60000h - 01A89000h
+api-ms-win-core-localization-l1  loaded at F7B30000h - F7B39000h
+api-ms-win-core-fibers-l1-1-1    loaded at F7B40000h - F7B4F000h
+api-ms-win-core-synch-l1-2-0     loaded at F7B60000h - F7B65000h
+tak_deco_lib                     loaded at 003D0000h - 003F1000h
+foo_input_tak                    loaded at 01910000h - 01951000h
+foo_uie_elplaylist               loaded at 01780000h - 017F3000h
+foo_albumlist                    loaded at 01730000h - 01776000h
+foo_fileops                      loaded at 00390000h - 003D0000h
+api-ms-win-crt-filesystem-l1-1-  loaded at F7B70000h - F7B7B000h
+avutil-fb2k-55                   loaded at 01690000h - 0172E000h
+avcodec-fb2k-57                  loaded at 01420000h - 0168B000h
+foo_input_std                    loaded at 012C0000h - 0141C000h
+foo_unpack                       loaded at 00350000h - 00384000h
+foo_upnp                         loaded at 00FA0000h - 011A7000h
+kerberos                         loaded at 7CC80000h - 7CC8E000h
+concrt140                        loaded at 7C430000h - 7C440000h
+winex11                          loaded at 7C630000h - 7C6AC000h
+api-ms-win-crt-locale-l1-1-0     loaded at 7CC90000h - 7CCA4000h
+api-ms-win-crt-math-l1-1-0       loaded at 7CCB0000h - 7CCBE000h
+iphlpapi                         loaded at 7CCD0000h - 7CCEA000h
+netapi32                         loaded at 7CCF0000h - 7CD1C000h
+secur32                          loaded at 7CD20000h - 7CD52000h
+ws2_32                           loaded at 7CD60000h - 7CD8E000h
+jsproxy                          loaded at 7CD90000h - 7CDAD000h
+winhttp                          loaded at 7CDB0000h - 7CDEC000h
+bcrypt                           loaded at 7CDF0000h - 7CE0D000h
+crypt32                          loaded at 7CE20000h - 7CEE1000h
+gdiplus                          loaded at 7CEF0000h - 7CF79000h
+oleacc                           loaded at 7CF80000h - 7CFD6000h
+msimg32                          loaded at 7CFE0000h - 7CFEC000h
+api-ms-win-crt-utility-l1-1-0    loaded at 7CFF0000h - 7D002000h
+api-ms-win-crt-string-l1-1-0     loaded at 7D010000h - 7D019000h
+api-ms-win-crt-convert-l1-1-0    loaded at 7D020000h - 7D030000h
+api-ms-win-crt-runtime-l1-1-0    loaded at 7D040000h - 7D047000h
+api-ms-win-crt-stdio-l1-1-0      loaded at 7D4C0000h - 7D4D2000h
+api-ms-win-crt-heap-l1-1-0       loaded at 7D4E0000h - 7D4E8000h
+vcruntime140                     loaded at 7D510000h - 7D521000h
+msvcr120                         loaded at 7D060000h - 7D135000h
+ucrtbase                         loaded at 7D150000h - 7D232000h
+msvcp140                         loaded at 7D270000h - 7D358000h
+winspool                         loaded at 7D360000h - 7D398000h
+comdlg32                         loaded at 7D3A0000h - 7D48C000h
+dbghelp                          loaded at 7D530000h - 7D58B000h
+imagehlp                         loaded at 7D590000h - 7D5A6000h
+shared                           loaded at 10000000h - 10021000h
+msvcrt                           loaded at 7D5C0000h - 7D661000h
+zlib1                            loaded at 63080000h - 63099000h
+oleaut32                         loaded at 7D680000h - 7D794000h
+shell32                          loaded at 7D7A0000h - 7E159000h
+uxtheme                          loaded at 7E160000h - 7E193000h
+shlwapi                          loaded at 7E1A0000h - 7E20C000h
+dsound                           loaded at 7E210000h - 7E259000h
+msacm32                          loaded at 7E260000h - 7E284000h
+rpcrt4                           loaded at 7E290000h - 7E30A000h
+ole32                            loaded at 7E320000h - 7E469000h
+winmm                            loaded at 7E470000h - 7E523000h
+imm32                            loaded at 7E530000h - 7E548000h
+usp10                            loaded at 7E550000h - 7E58F000h
+version                          loaded at 7EFF0000h - 7F000000h
+advapi32                         loaded at 7E5A0000h - 7E60B000h
+gdi32                            loaded at 7E620000h - 7E73B000h
+user32                           loaded at 7E750000h - 7E947000h
+comctl32                         loaded at 7E950000h - 7EA85000h
+kernel32                         loaded at 7B420000h - 7B7F0000h
+ntdll                            loaded at 7BC10000h - 7BD05000h
+foobar2000                       loaded at 00400000h - 00609000h
+
+Stack dump analysis:
+Address: 7BC85D2Bh (ntdll+75D2Bh)
+Address: 7BCE7000h (ntdll+D7000h)
+Address: 7B43E173h (kernel32+1E173h)
+Address: 7B43E173h (kernel32+1E173h)
+Address: 7BCE7000h (ntdll+D7000h)
+Address: 022EAB60h (foo_ui_columns+16AB60h)
+Address: 022EAAFCh (foo_ui_columns+16AAFCh)
+Address: 0225A3F0h (foo_ui_columns+DA3F0h)
+Address: 0225A40Ch (foo_ui_columns+DA40Ch)
+Address: 0225A40Ch (foo_ui_columns+DA40Ch)
+Address: 0229133Fh (foo_ui_columns+11133Fh)
+Address: 7B63F000h (kernel32+21F000h)
+Address: 0225A3F0h (foo_ui_columns+DA3F0h)
+Address: 0228E3F0h (foo_ui_columns+10E3F0h)
+Address: 7B430672h (kernel32+10672h)
+Address: 7B63F000h (kernel32+21F000h)
+Address: 7B48AB10h (kernel32+6AB10h)
+Address: 7B430730h (kernel32+10730h)
+Address: 7B63F000h (kernel32+21F000h)
+Address: 7BCE7000h (ntdll+D7000h)
+Address: 7BCE7000h (ntdll+D7000h)
+Address: 7BCE7000h (ntdll+D7000h)
+Address: 7BC848E4h (ntdll+748E4h), symbol: "call_thread_func_wrapper" (+Ch)
+Address: 7BC848E4h (ntdll+748E4h), symbol: "call_thread_func_wrapper" (+Ch)
+Address: 7BC87E59h (ntdll+77E59h)
+Address: 7B4305F0h (kernel32+105F0h)
+Address: 7BCE7000h (ntdll+D7000h)
+Address: 7BCE7000h (ntdll+D7000h)
+Address: 7B4305F0h (kernel32+105F0h)
+Address: 7BCE7000h (ntdll+D7000h)
+Address: 7BCA9D50h (ntdll+99D50h)
+Address: 7BC46780h (ntdll+36780h)
+Address: 7BCE7000h (ntdll+D7000h)
+Address: 7BC848D6h (ntdll+748D6h), symbol: "call_thread_exit_func" (+32h)
+Address: 7B4305F0h (kernel32+105F0h)
+
+Environment:
+App: foobar2000 v1.4
+UI: Columns UI 1.0.0-alpha.2
+
+Components:
+Core (2018-07-24 10:54:48 UTC)
+    foobar2000 core 1.4
+foo_albumlist.dll (2018-07-24 10:54:02 UTC)
+    Album List 4.6
+foo_cdda.dll (2018-07-24 10:54:04 UTC)
+    CD Audio Decoder 3.0
+foo_comserver2.dll (2006-07-31 19:13:20 UTC)
+    COM Automation server 0.7 alpha 6
+foo_converter.dll (2018-07-24 10:54:04 UTC)
+    Converter 1.5.3
+foo_cuesheet_creator.dll (2007-03-10 02:58:28 UTC)
+    Cuesheet Creator 0.4.6
+foo_dsp_eq.dll (2018-07-24 10:53:56 UTC)
+    Equalizer 1.2.1
+foo_dsp_std.dll (2018-07-24 10:53:58 UTC)
+    Standard DSP Array 1.3.1
+foo_fileops.dll (2018-07-24 10:54:00 UTC)
+    File Operations 2.3
+foo_freedb2.dll (2018-07-24 10:54:14 UTC)
+    Online Tagger 0.7
+foo_input_std.dll (2018-07-24 10:54:34 UTC)
+    FFmpeg Decoders 3.2.4
+    Standard Input Array 1.0
+foo_input_tak.dll (2018-09-17 16:54:44 UTC)
+    TAK Decoder 0.4.8
+foo_rgscan.dll (2018-07-24 10:54:10 UTC)
+    ReplayGain Scanner 2.3
+foo_run.dll (2018-09-16 07:08:35 UTC)
+    Run services 0.3.8
+foo_ui_columns.dll (2018-09-13 01:58:47 UTC)
+    Columns UI 1.0.0-alpha.2
+foo_ui_std.dll (2018-07-24 10:54:14 UTC)
+    Default User Interface 0.9.5
+foo_uie_biography.dll (2010-12-10 23:47:22 UTC)
+    Biography View 0.4.2.4
+foo_uie_elplaylist.dll (2010-10-30 12:51:16 UTC)
+    ELPlaylist 0.6.9.1.2(beta)
+foo_uie_panel_splitter.dll (2009-12-09 15:16:12 UTC)
+    Panel Stack Splitter 0.3.8.3(alpha)
+foo_unpack.dll (2018-07-24 10:54:08 UTC)
+    ZIP/GZIP/RAR Reader 1.8
+foo_upnp.dll (2018-09-13 01:53:14 UTC)
+    UPnP/DLNA Renderer, Server, Control Point 0.99.49
+
+Recent events:
+Loading DLL: Z:\mnt\d\Windows\Install\foobar2000\components\foo_cuesheet_creator.dll
+Loading DLL: Z:\mnt\d\Windows\Install\foobar2000\components\foo_comserver2.dll
+Loading DLL: Z:\mnt\d\Windows\Install\foobar2000\components\foo_freedb2.dll
+Loading DLL: Z:\mnt\d\Windows\Install\foobar2000\components\foo_uie_biography.dll
+Loading DLL: Z:\mnt\d\Windows\Install\foobar2000\components\foo_converter.dll
+Loading DLL: Z:\mnt\d\Windows\Install\foobar2000\components\foo_cdda.dll
+Loading DLL: Z:\mnt\d\Windows\Install\foobar2000\user-components\foo_ui_columns\foo_ui_columns.dll
+Loading DLL: Z:\mnt\d\Windows\Install\foobar2000\components\foo_ui_std.dll
+Loading DLL: Z:\mnt\d\Windows\Install\foobar2000\components\foo_rgscan.dll
+Components loaded in: 0:00.327227
+Pre config read
+Configuration read in: 0:00.067146
+foobar2000 v1.4 [portable]
+Starting playlist loading
+Shell hook registration failure: 0
+Watching: Z:\mnt\d\Contents\Musics\Musics
+Filter Panel - Genre: initialised in 0.003 s
+Filter Panel - Composer: initialised in 0.004 s
+Filter Panel - Artist: initialised in 0.005 s
+Filter Panel - Album: initialised in 0.004 s
+Playlist view initialised in: 0.003 s
+User Interface initialized in: 0:00.144901
+Processing commandline
+initquit::init entry
+foo_upnp: succesfully loaded file Z:\mnt\d\Windows\Install\foobar2000\foo_upnp.xml
+foo_upnp: created 372 path registry entries in 0.009s
+foo_upnp: initialized in 0.039s
+initquit::init exit
+Startup time : 0:00.730147
+foo_upnp: loaded Media Library tree in 0.088s
+
+
+Machine specifications:
+OS: wine-3.20, on: Linux / 4.18.11-arch1-1-ARCH
+CPU: Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz, features: MMX SSE SSE2 SSE3 SSE4.1 SSE4.2
+CPU threads: 8
